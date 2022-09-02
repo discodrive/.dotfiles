@@ -29,7 +29,7 @@ alias tmuxconfig="vim ~/.tmux.conf"
 # Git
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gpm="git pull --rebase origin main"
-
+alias gdab="git branch --merged | egrep -v '(^\*|master|main|release)' | xargs git branch -d"
 
 # Vim
 alias vim="nvim"
@@ -38,6 +38,9 @@ alias v="nvim"
 # Filesystem
 alias c="code ."
 alias o="open ."
+alias ls="exa -a"
+alias ll="exa -alh"
+alias tree="exa --tree"
 
 # Source local envvars
 source ~/.dotfiles/zsh/envvars.zsh
