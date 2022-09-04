@@ -53,3 +53,5 @@ export PATH="/Users/substrakt/.composer/vendor/bin:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# eval "$(starship init zsh)"
