@@ -8,7 +8,12 @@ require'lspconfig'.intelephense.setup{
     on_attach = function()
         -- In normal mode, capital K will enable hover information for the current buffer only
         vim.keymap.set("n", "K", vim.lsp.buf.hover, {buffer=0})
+        -- Go to definition
         vim.keymap.set("n", "gd", vim.lsp.buf.definition, {buffer=0})
+        -- Scroll through errors in the current file
+        vim.keymap.set("n", "<leader>df", vim.diagnostic.goto_next, {buffer=0})
+        -- Open error diagnostics in Telescope as a list
+        vim.keymap.set("n", "<leader>dl", "<cmd>Telescope diagnostics <CR>", {buffer=0})
     end,
 }
 
