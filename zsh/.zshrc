@@ -52,3 +52,6 @@ export PATH="/usr/local/go/bin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 eval "$(starship init zsh)"
+
+
+source "/Users/substrakt/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
