@@ -42,9 +42,6 @@ alias ls="exa -a"
 alias ll="exa -alh"
 alias tree="exa --tree"
 
-# Source local envvars
-source ~/.dotfiles/zsh/envvars.zsh
-
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH
 export PS1="\W \$""
@@ -54,4 +51,4 @@ export PATH="/usr/local/go/bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# eval "$(starship init zsh)"
+eval "$(starship init zsh)"
