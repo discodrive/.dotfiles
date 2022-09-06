@@ -1,8 +1,8 @@
-# If you come from bash you might have to change your $PATH.
+
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/substrakt/.oh-my-zsh"
+export ZSH="/Users/$MACHINE_USER/.oh-my-zsh"
 
 ZSH_THEME="agnoster"
 
@@ -46,10 +46,10 @@ alias cd="z"
 alias zz="z -"
 
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH
-export PS1="\W \$""
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+export PS1="\W \$"
 export PATH="/usr/local/Cellar/ruby/2.7.1_2/bin:$PATH"
-export PATH="/Users/substrakt/.composer/vendor/bin:$PATH"
+export PATH="/Users/$MACHINE_USER/.composer/vendor/bin:$PATH"
 export PATH="/usr/local/go/bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
