@@ -14,9 +14,10 @@ ZSH_THEME="agnoster"
 plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+source ~/.dotfiles/zsh/envvars.zsh
 
 # User configuration
-alias projects="cd ~/Projects"
+alias projects="cd $PROJECT_ROOT"
 
 # Misc
 alias zshconfig="vim ~/.zshrc"
@@ -41,6 +42,8 @@ alias o="open ."
 alias ls="exa -a"
 alias ll="exa -alh"
 alias tree="exa --tree"
+alias cd="z"
+alias zz="z -"
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH
@@ -52,6 +55,6 @@ export PATH="/usr/local/go/bin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
-
-source "/Users/substrakt/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
+source "/Users/$MACHINE_USER/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
