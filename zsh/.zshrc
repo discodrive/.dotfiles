@@ -1,5 +1,6 @@
 
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+source ~/.dotfiles/zsh/envvars.zsh
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/$MACHINE_USER/.oh-my-zsh"
@@ -14,7 +15,6 @@ ZSH_THEME="agnoster"
 plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
-source ~/.dotfiles/zsh/envvars.zsh
 
 # User configuration
 alias projects="cd $PROJECT_ROOT"

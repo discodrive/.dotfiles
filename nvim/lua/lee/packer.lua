@@ -54,5 +54,9 @@ return require('packer').startup(function(use)
         }
     end,
   }
+
+  -- Local plugins
+  use "~/plugins/nvim-lua-plugin"
+
 end)
 
