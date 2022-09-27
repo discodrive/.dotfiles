@@ -125,6 +125,7 @@ local attach_to_buffer = function(bufnr, command)
                 on_exit = function()
                     local failed = {}
                     for _, test in pairs(state.tests) do
+                        print(test)
                         if test.line then
                             if not test.success then
                                 table.insert(failed, {
@@ -148,7 +149,6 @@ local attach_to_buffer = function(bufnr, command)
 end
 
 vim.api.nvim_create_user_command("GoTestOnSave", function()
-    print("Something happened")
     attach_to_buffer(vim.api.nvim_get_current_buf(), { "go", "test", "./...", "-v", "-json" })
 end, {})
 

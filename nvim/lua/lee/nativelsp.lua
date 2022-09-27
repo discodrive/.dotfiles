@@ -29,3 +29,7 @@ require'lspconfig'.terraform_lsp.setup{
     on_attach = on_attach, 
 }
 
+-- Go - gopls https://github.com/golang/tools/tree/master/gopls
+require'lspconfig'.gopls.setup{
+    on_attach = on_attach,
+}
