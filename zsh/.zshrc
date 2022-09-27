@@ -45,12 +45,15 @@ alias tree="exa --tree"
 alias cd="z"
 alias zz="z -"
 
+export GOPATH="$HOME/go"
+export GOROOT="/usr/local/opt/go/libexec"
+export PATH="$GOPATH/bin:$PATH"
+export PATH="$GOROOT/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PS1="\W \$"
 export PATH="/usr/local/Cellar/ruby/2.7.1_2/bin:$PATH"
 export PATH="/Users/$MACHINE_USER/.composer/vendor/bin:$PATH"
-export PATH="/usr/local/go/bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
