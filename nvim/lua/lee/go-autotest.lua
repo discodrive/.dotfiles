@@ -58,7 +58,7 @@ end
 -- local display_golang_output = function(state, bufnr) end
 
 local ns = vim.api.nvim_create_namespace "live-tests"
-local group = vim.api.nvim_create_augroup("teej-automagic", { clear = true })
+local group = vim.api.nvim_create_augroup("go-autotest", { clear = true })
 
 local attach_to_buffer = function(bufnr, command)
     local state = {
@@ -94,6 +94,7 @@ local attach_to_buffer = function(bufnr, command)
                         return
                     end
 
+                    print(ipairs(data))
                     for _, line in ipairs(data) do
                         local decoded = vim.json.decode(line)
                         if decoded.Action == "run" then
