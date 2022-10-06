@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
   local use = require('packer').use
   require('packer').startup(function()
     use 'wbthomason/packer.nvim' -- Package manager
+    use 'williamboman/nvim-lsp-installer'
     use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
   end)
 
