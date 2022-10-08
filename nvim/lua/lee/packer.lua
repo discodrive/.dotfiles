@@ -22,13 +22,9 @@ return require('packer').startup(function(use)
     run = ':TSUpdate'
   }
 
-  local use = require('packer').use
-  require('packer').startup(function()
-    use 'wbthomason/packer.nvim' -- Package manager
-    use 'williamboman/nvim-lsp-installer'
-    use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
-  end)
-
+  use 'williamboman/nvim-lsp-installer'
+  use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
+  
   use {
     "windwp/nvim-autopairs",
     config = function() require("nvim-autopairs").setup {} end
