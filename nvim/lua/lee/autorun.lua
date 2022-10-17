@@ -30,6 +30,7 @@ local attach_to_buffer = function(bufnr, pattern, command)
     })
 end
 
+local state = {}
 --[[
 Create an nvim command which prompts for:
 - Buffer number
@@ -43,4 +44,8 @@ vim.api.nvim_create_user_command("AutoRun", function()
     local command = vim.split(vim.fn.input("List commands to run: "), " ")
 
     attach_to_buffer(tonumber(bufnr), pattern, command)
+end, {})
+
+vim.api.nvim_create_user_command("AutoStop", function()
+    vim.api.nvim_create_augroup("TestAutocmd", { clear = true })
 end, {})
