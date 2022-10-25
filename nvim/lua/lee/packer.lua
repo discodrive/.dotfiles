@@ -37,6 +37,14 @@ return require('packer').startup(function(use)
 
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
+  -- Debugging
+  use 'mfussenegger/nvim-dap'
+  use {"rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"}}
+  use {
+      'leoluz/nvim-dap-go',
+      config = function() require("dap-go").setup({}) end
+  }
+
   use {
     "nathom/filetype.nvim",
     config = function()
