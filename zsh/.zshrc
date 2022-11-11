@@ -45,6 +45,15 @@ alias tree="exa --tree"
 alias cd="z"
 alias zz="z -"
 
+# Pomodoro
+alias work="timer 30m && terminal-notifier -message 'Pomodoro'\
+        -title 'Time for a break. Take a load off!'\
+        -sound Crystal"
+        
+alias rest="timer 5m && terminal-notifier -message 'Pomodoro'\
+        -title 'Break time is over. Back to the grind.'\
+        -sound Crystal"
+
 export GOPATH="$HOME/go"
 export GOBIN="$GOPATH/bin"
 export PATH="$GOPATH/bin:$PATH"
