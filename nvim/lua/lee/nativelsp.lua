@@ -36,3 +36,8 @@ require'lspconfig'.gopls.setup{
     on_attach = on_attach,
     cmd = {'gopls', '--remote=auto'},
 }
+
+-- Astro
+require'lspconfig'.astro.setup{
+    on_attach = on_attach,
+}
