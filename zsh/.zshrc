@@ -49,7 +49,7 @@ alias zz="z -"
 alias work="timer 30m && terminal-notifier -message 'Pomodoro'\
         -title 'Time for a break. Take a load off!'\
         -sound Crystal"
-        
+
 alias rest="timer 5m && terminal-notifier -message 'Pomodoro'\
         -title 'Break time is over. Back to the grind.'\
         -sound Crystal"

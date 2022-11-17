@@ -1,5 +1,8 @@
 -- Language Server Protocols
 local on_attach = function()
+
+    local opts = {buffer=0}
+
     -- In normal mode, capital K will enable hover information for the current buffer only
     vim.keymap.set("n", "K", vim.lsp.buf.hover, {buffer=0})
     -- Go to definition
